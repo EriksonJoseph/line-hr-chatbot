@@ -12,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 // LINE webhook middleware
 app.post('/webhook', express.json(), async (req, res) => {
   try {
+    console.log(`🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀Hello Torpong🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀`)
     const events = req.body.events;
     
     await Promise.all(events.map(async (event) => {
